@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>API Reference - HTML</title>
+</head>
+<body>
+
+    <header>
+        <h1>API Reference</h1>
+        <nav aria-label="Main Navigation">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="getting-started.html">Getting Started</a></li>
+                <li><a href="api-reference.html" aria-current="page">API Reference</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+
+        <section>
+            <h2>Core Methods</h2>
+            <p>Below is the reference table for the core initialization methods available.</p>
+            
+            <details>
+                <summary><strong>View Initialization Methods</strong></summary>
+                <table border="1">
+                    <caption>Initialization Methods</caption>
+                    <thead>
+                        <tr>
+                            <th scope="col">Method Name</th>
+                            <th scope="col">Parameters</th>
+                            <th scope="col">Return Type</th>
+                            <th scope="col">Description</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><code>init</code></td>
+                            <td>config (Object)</td>
+                            <td>Boolean</td>
+                            <td>Initializes the framework with custom configurations.</td>
+                        </tr>
+                        <tr>
+                            <td><code>mount</code></td>
+                            <td>selector (String)</td>
+                            <td>Void</td>
+                            <td>Mounts the virtual DOM to the specified HTML element.</td>
+                        </tr>
+                        <tr>
+                            <td><code>destroy</code></td>
+                            <td>None</td>
+                            <td>Boolean</td>
+                            <td>Cleans up memory and removes event listeners.</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </details>
+        </section>
+
+        <section>
+            <h2>Utility Functions</h2>
+            <details>
+                <summary><strong>View Utility Functions</strong></summary>
+                <table border="1">
+                    <caption>Utility Functions</caption>
+                    <thead>
+                        <tr>
+                            <th scope="col">Function</th>
+                            <th scope="col">Description</th>
+                            <th scope="col">Example</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><code>fetchData(url)</code></td>
+                            <td>Fetches JSON data from a REST endpoint.</td>
+                            <td><pre><code>fetchData('/api/users')</code></pre></td>
+                        </tr>
+                        <tr>
+                            <td><code>formatDate(date)</code></td>
+                            <td>Converts an ISO string into a human-readable format.</td>
+                            <td><pre><code>formatDate('2026-10-15')</code></pre></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </details>
+        </section>
+    </main>
+
+    <footer>
+        <hr>
+        <p><small>&copy; <time datetime="2026">2026</time> Open Source Project.</small></p>
+    </footer>
+
+</body>
+</html>
